@@ -90,7 +90,7 @@ class Editor {
 
 /// Memento
 abstract interface class Memento {
-  getState();
+  String getState();
 }
 
 class EditorMemento implements Memento {
@@ -99,7 +99,7 @@ class EditorMemento implements Memento {
   EditorMemento(this.state);
 
   @override
-  getState() {
+  String getState() {
     return state;
   }
 }

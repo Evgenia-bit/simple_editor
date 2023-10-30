@@ -72,6 +72,7 @@ class _EditorViewState extends State<EditorView> {
   }
 }
 
+
 /// Originator
 class Editor {
   String text;
@@ -86,6 +87,8 @@ class Editor {
   }
 }
 
+
+/// Memento
 abstract interface class Memento {
   getState();
 }
@@ -100,6 +103,7 @@ class EditorMemento implements Memento {
     return state;
   }
 }
+
 
 /// Caretaker
 class UndoRedoManager {
